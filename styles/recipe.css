@@ -1,0 +1,37 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.recipe-main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.recipe-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+@media screen and (min-width: 750px) {
+  .recipe-main-container {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+  }
+
+  .recipe-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .recipe-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+}
